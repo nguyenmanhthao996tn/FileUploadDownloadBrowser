@@ -7,9 +7,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Download</title>
 </head>
+<style>
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #f542b6;
+        color: white;
+        text-align: center;
+    }
+</style>
 
 <body>
-    <h1>Contents</h1>
+    <h1>Download</h1>
     <ul id="menu">
         <!-- 
         <li><a href="#">Something1</a></li>
@@ -17,6 +28,14 @@
         <li><a href="#">Something3</a></li>
         <li><a href="#">Something4</a></li> -->
     </ul>
+    
+    <div class="footer">
+        <h1>Upload</h1>
+        <form ref='uploadForm' id='uploadForm' action='/upload' method='post' encType="multipart/form-data">
+            <input type="file" name="sampleFile" />
+            <input type='submit' value='Upload!' />
+        </form>
+    </div>
 </body>
 
 </html>
